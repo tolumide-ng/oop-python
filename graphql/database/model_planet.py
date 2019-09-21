@@ -10,8 +10,7 @@ class ModelPlanet(Base):
 
     __tablename__ = 'planet'
 
-    id = Column('id', Integer, primary_key=True)
-    name = Column('name', String)
+    id = Column('id', Integer, primary_key=True, autoincrement=True) name = Column('name', String)
     rotation_period = Column('rotation_period', String)
     orbital_period = Column('orbital_period', String)
     diameter = Column('diameter', String)

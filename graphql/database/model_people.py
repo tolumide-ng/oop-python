@@ -7,7 +7,7 @@ class ModelPeople(Base):
 
     __tablename__ = 'people'
 
-    id = Column('id', Integer, primary_key=True)
+    id = Column('id', Integer, primary_key=True, autoincrement=True)
     name = Column('name', String)
     height = Column('height', String)
     mass = Column('mass', String)
